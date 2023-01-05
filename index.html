@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responsive</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/d01274bb20.js" crossorigin="anonymous"></script>
+	<style>
+		body {
+			margin: 5px;
+			/* overflow-x: hidden; */
+		}
+
+		@media screen and (min-width: 350px) and (max-width: 450px) {
+			.row {
+				text-align: center;
+			}
+			.one{
+				height: auto!important;
+			}
+			.one .olign{
+				padding-left: 3rem!important;
+				padding-top: 0px!important;
+			}
+			.one .olign2{
+				
+				padding-top: 0px!important;
+			}
+			.one p{
+				width: 300px!important;
+			}
+			.two{
+				height: auto!important;
+			}
+			.two .olign{
+				padding-top: 0px!important;
+			}
+			.two p{
+				width: 300px!important;
+			}
+			.t3 {
+			
+				margin: 20px 20px!important;
+			
+			}
+			
+
+			#f1 {
+				order: 3;
+			}
+			.six img{
+				width: 350px;
+				
+			}
+			.card.img_card{
+				
+				left: 0%;
+				top: 100%;
+				width: 100%;
+				text-align: center;
+			}
+			.six2{
+				padding-top: 100px;
+			}
+			.cardalign{
+				padding-top: 10px;
+			}
+			.cardalign1{
+				padding-top: 10px!important;
+			}
+			.seven{
+				background-color: aqua;
+				height: auto!important;
+				padding-bottom: 10px;
+			}
+			.stext{
+				text-align: center!important;
+			}
+			.seven2 .container{
+				padding-top: 20px!important;
+				text-align: center;
+				
+			}
+			.contact{
+				margin-top: 10px!important;
+			}
+			.cardform{
+				margin-top: 10px!important;
+				margin-bottom: 10px!important;
+			}
+			.copy{
+				left: 120px!important;
+				top: 115px!important;
+			}
+		}
+		@media screen and (min-width: 450px) and (max-width: 890px) {
+			.two{
+				height: auto!important;
+			}
+			.two .olign{
+				padding-top: 0px!important;
+			}
+			.one .olign{
+				padding-left: 3rem!important;
+				padding-top: 0px!important;
+			}
+			.one .olign2{
+				
+				padding-top: 0px!important;
+			}
+			.t3 {
+				margin: 20px 20px!important;
+			}
+			
+			.seven{
+				background-color: aqua;
+				height: auto!important;
+				padding-bottom: 10px;
+			}
+			.seven2 .container{
+				padding-top: 20px!important;
+				text-align: center;
+				padding-bottom: 10px;
+			}
+			.stext{
+				text-align: center!important;
+			}
+			.cardalign1{
+				padding-top: 10px!important;
+			}
+			.cardalign{
+				padding-top: 10px;
+			}
+			.img_card{
+				left: 30%!important;
+			}
+		}
+
+		/* @media (min-width: 1200px)
+		{
+			.container{
+				max-width: 950px;
+			}
+		} */
+
+		.six2 .container{
+			max-width: 950px;
+		}
+
+		.head {
+			display: flex;
+			justify-content: space-around;
+			font-size: 20px;
+			padding-bottom: 10px;
+		}
+
+		.one {
+			background-color: rgb(210, 210, 210);
+			height: 600px;
+			padding-bottom: 10px;
+
+		}
+		.one .olign{
+			padding-left: 12rem;
+			padding-top: 150px;
+		}
+		.one .olign2{	
+				padding-top: 120px!important;
+			}
+		.one p{
+			width: 350px;
+		}
+		.two .olign{
+				padding-top: 150px;
+			}
+
+		.two p{
+			width: 415px;
+		}
+		.four .container {
+			margin-top: 20px;
+		}
+
+		.two {
+			background-color: white;
+			height: 650px;
+		}
+
+		.three {
+			background-color: rgb(210, 210, 210);
+			margin-top: 20px;
+			padding-bottom: 10px;
+			padding-top: 10px;
+		}
+
+		.t3 {
+			
+			margin: 20px 230px;
+			
+		}
+
+		.bord_card {
+			margin-bottom: 15px;
+			margin-top: 20px;
+			border-left: 10px solid rgb(70, 146, 120);
+			width: auto;
+			box-shadow: 5px 5px 10px grey;
+		}
+
+		.five {
+			background-color: rgb(210, 210, 210);
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		
+		.t5 {
+			text-align: center;
+
+		}
+		
+
+		.six {
+            width: 100%;
+
+        }
+        .six_body{
+           display: flex;
+		   justify-content: center;
+        }
+		.six_img{
+			width: 550px;
+		}
+        .img_div {
+            
+            position: relative;
+        }
+
+        .img_card {
+            /* width: 20%; */
+            /* left: 55%;
+            top: 363%; */
+            position: absolute;
+			top: 55%;
+			left: 65%;
+			width: 250px;
+        }
+		.six2{
+			 margin-top: 145px;
+			 padding-bottom: 20px;
+			 			/*display: flex;
+			flex-wrap: wrap	;
+			justify-content: space-around; */
+		}
+		
+		ol{
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+		}
+		li{
+			width: 300px;
+			padding-top: 20px;
+		}
+		.seven{
+			margin-top: 50px;
+			background-color: aqua;
+			height: 150px;
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+	    .card .fa-solid{
+			text-align: center;
+			padding-top: 20px;
+			font-size: 30px;
+		}
+		.cardalign{
+			padding-left: 15px;	
+			padding-top: 10px;
+		}
+		.cardalign1{
+			padding-left: 15px;
+			padding-top: 60px;	
+		}
+		.sh{
+			box-shadow: 5px 5px 10px grey;
+		}
+		.seven2{
+			background-color: rgb(210, 210, 210);
+		}	
+		
+		.seven2 .container{
+			padding-top: 300px;
+		}
+		.stext{
+			text-align: end;
+		}
+		.eight{
+			background-color: #0c8863;
+			height: auto;
+			display: flex;
+			justify-content: space-evenly;
+			flex-wrap: wrap;
+			
+		}
+		.cardform{
+			background-color: white;
+			width: 300px;
+			box-shadow: 5px 5px 10px grey;
+			margin: 10px 0px;
+			
+			
+			/* margin-left: 100px;
+			width: 300px;
+			height: auto;
+			margin: auto; */
+		}
+		.formstr{
+			margin: auto;
+			width: 200px;
+			
+		}
+		.form-control{
+			line-height: 1.;
+		}
+		.eight2{
+			background-color: rgb(36, 28, 28);
+			height: 200px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		.links{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			color: white;
+			font-size: 10px;
+			justify-content: space-evenly;
+		}
+		.contact{
+			/* background-color: rgb(36, 201, 110); */
+			width: 250px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		.eight2 ul{
+			list-style: none;
+			color: aliceblue;
+			text-align: center;
+			padding-top: 50px;
+		}
+		.eight2 li{
+			display: inline;
+			padding-left: 30px;
+			font-size: 10px;
+		}
+		.copy{
+			font-size: 10px;
+			text-align: center;
+			color: white;
+			padding-top: 20px;
+			
+		}
+		.fa-brands{
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="head">
+		<i class="fa-regular fa-circle"></i>
+		<i class="fa-solid fa-bars"></i>
+	</div>
+
+	<div class="one">
+		<div class="container-fluid ">
+			<div class="row align-items-center">
+				<div class="col-12 col-md-5 col-lg-6 order-1 olign">
+
+					<h4>Online Learning</h4>
+					<h2>ZERO WASTE</h2>
+					<p>While some believe that the unplanned and rapid move to online learning –
+						with no training. </p>
+					<button type="button" class="btn btn-dark">Read more</button>
+
+				</div>
+				<div class="col-12 col-md-5 col-lg-6 order-sm-2 olign2">
+					<img src="study0.png" class="img-fluid">
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="two">
+		<div class="container-fluid">
+			<div class="row align-items-center">
+				<div class="col-12 col-md-5 col-lg-6 olign ">
+					<img src="study1.png" class="img-fluid">
+				</div>
+				<div class="col-12 col-md-5 col-lg-6 px-5 olign" >
+					<h4>How to get Started</h4>
+					<h2>ZERO WASTE: A <br> Beginner's Guide</h2>
+					<p>Study implies an attempt to obtain a grasp of something by methodical or exhaustive thought:
+						to study a problem. </p>
+					<button type="button" class="btn btn-success">Read More</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="three">
+		<div class="t3">
+			<h2>What is Zero waste?</h2>
+
+			<div class="card bord_card">
+				<div class="card-body">
+					<h5 class="card-title">Reduce Waste</h5>
+					<p class="card-text">
+						The present study examines waste behaviors across three main
+						contexts—workplace (including lab and office), home and holiday. The
+						research has two aims. Firstly, we compare the influence on
+						recycling of TPB variables, pro-environmental identity and relevant
+						situational variables.
+					</p>
+				</div>
+			</div>
+
+			<div class="card bord_card">
+				<div class="card-body">
+					<h5 class="card-title">Recycle and Compost</h5>
+					<p class="card-text">
+						The present study examines waste behaviors across three main contexts—workplace (including lab
+						and office), home and holiday. The research has two aims. Firstly, we compare the influence on
+						recycling of TPB variables, pro-environmental identity and relevant situational variables
+					</p>
+				</div>
+			</div>
+
+			<div class="card bord_card">
+				<div class="card-body">
+					<h5 class="card-title">How to get Started</h5>
+					<p class="card-text">
+						The present study examines waste behaviors across three main contexts—workplace (including lab
+						and office), home and holiday. The research has two aims. Firstly, we compare the influence on
+						recycling of TPB variables, pro-environmental identity and relevant situational variables
+					</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- <div class="container" style="padding-bottom: 20px; width: 100%;">
+  			<div class="row" >
+  				
+  					<div class="col-lg-4 col-md-4" style="width: 30%" id="f1">
+      					<p style="text-align: left; ">The present study examines waste behaviors across three main contexts—workplace (including lab and office), home and holiday. The research has two aims. Firstly, we compare the influence on recycling of TPB variables, pro-environmental identity and relevant situational variables</p>
+						<button type="button" class="btn btn-success">Read More</button>
+    				</div>
+  				
+    			
+    			<div class="col-lg-4 col-md-4" style="width: 40%" id="f2">
+      				<img src="study2.png" class="img-fluid">
+    			</div>
+    			<div class="col-lg-4 col-md-4 row align-items-end" style="width: 30%" id="f3">
+      				<h2>Driving Effective Zero Waste Programs With Smart Sensors</h2>
+    			</div>
+  			</div>
+		</div> -->
+		
+	<div class="four">
+		<div class="container">
+			<div class="row" style="padding-bottom: 10px;">
+				<div class="col-lg-4" id="f1">
+					<p>The present study examines waste behaviors across three main contexts—workplace
+						(including lab and office), home and holiday. The research has two aims. Firstly, we compare the
+						influence on
+						recycling of TPB variables, pro-environmental identity and relevant situational variables</p>
+					<button type="button" class="btn btn-success">Read More</button>
+				</div>
+				<div class="col-lg-4" id="f2">
+					<img src="study2.png" class="img-fluid">
+				</div>
+				<div class="col-lg-4" style="margin-top: auto;">
+					<h2>Driving Effective Zero Waste Programs With Smart Sensors</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="five">
+		<div class="t5 d-flex flex-column justify-content-center">
+			<div>
+				<h2>Zero Waste Outside The Home</h2>
+			</div>
+			<div>
+				<p>While some believe that the unplanned and rapid move to online learning –
+					with no training, insufficient bandwidth, and little preparation</p>
+			</div>
+			<div>
+				<button type="button" class="btn btn-dark">Read more</button>
+			</div>
+			
+			
+			
+		</div>
+	</div>
+
+	<div class="six">
+        <div class="six_body">
+
+            <div class="img_div">
+
+                <img src="study3.jpg"class="six_img">
+
+				<div class="card img_card">
+					<div class="card-body">
+						<h5 class="card-title">Online Class</h5>
+						<h2 class="card-title">Zero Waste<br> Training</h2>
+						<p class="card-text" style="font-size: 12px;">While some believe that the unplanned and rapid move to online learning –
+							with no training, insufficient bandwidth, and little preparation.</p>
+						<a href="#" class="btn btn-success">Read More</a>
+					</div>
+            </div>
+            
+            
+            </div>
+        </div>
+
+    </div>
+
+	<div class="six2">
+		<div class="container">
+			<ol>
+				<li>While some believe that the unplanned and rapid move to online learning –
+					with no training, insufficient bandwidth, and little preparation</li>
+				<li>While some believe that the unplanned and rapid move to online learning –
+					with no training, insufficient bandwidth, and little preparation</li>
+				<li>While some believe that the unplanned and rapid move to online learning –
+					with no training, insufficient bandwidth, and little preparation</li>
+				<li>While some believe that the unplanned and rapid move to online learning –
+					with no training, insufficient bandwidth, and little preparation</li>
+				<li>While some believe that the unplanned and rapid move to online learning –
+					with no training, insufficient bandwidth, and little preparation</li>
+				<li>While some believe that the unplanned and rapid move to online learning –
+					with no training, insufficient bandwidth, and little preparation</li>
+			</ol>
+		</div>
+		
+	</div>
+
+	<div class="seven">
+		<div class="cardalign1">
+			<div class="card sh" style="width: 13rem;">
+				<i class="fa-solid fa-hand"></i>
+				<div class="card-body text-center">
+				  <h5 class="card-title">Refuse</h5>
+				  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  <a href="#" class="card-link">More</a>
+				</div>
+			  </div>
+		</div>
+
+		<div class="cardalign">
+			<div class="card sh" style="width: 13rem;">
+				<i class="fa-solid fa-leaf"></i>
+				<div class="card-body text-center">
+				  <h5 class="card-title">Reduce</h5>
+				  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  <a href="#" class="card-link">More</a>
+				</div>
+			  </div>
+		</div>
+
+		<div class="cardalign1">
+			<div class="card sh" style="width: 13rem;">
+				<i class="fa-solid fa-recycle"></i>
+				<div class="card-body text-center">
+				  <h5 class="card-title">Recycle</h5>
+				  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  <a href="#" class="card-link">More</a>
+				</div>
+			  </div>
+		</div>
+
+		<div class="cardalign">
+			<div class="card sh" style="width: 13rem;">
+				<i class="fa-solid fa-user"></i>
+				<div class="card-body text-center">
+				  <h5 class="card-title">Support</h5>
+				  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  <a href="#" class="card-link">More</a>
+				</div>
+			  </div>
+		</div>
+	</div>
+
+	<div class="seven2" style="padding-bottom: 80px;">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-12 col-md-5 col-lg-5">
+					<h2 class="stext">
+						Principle Of <br>Zero Waste
+					  </h2>
+		  
+				</div>
+				<div class="col-12 col-md-7 col-lg-5 px-5 ">
+
+					<p >
+						While some believe that the unplanned and rapid move to online learning –
+						with no training, insufficient bandwidth, and little preparation
+					</p>
+		
+					<div class="text-center text-md-start">
+					  <a href="#" class="btn btn-success">Read more</a>
+					  
+					</div>
+		
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="eight">
+		<div class="contact">
+			<i class="fa-solid fa-phone"> Call us</i>
+			<p>98409573444</p>
+
+			<i class="fa-solid fa-location-dot"> Location</i>
+			<p>121 Rockstreet, 12th Avenue NewYork, NY900024</p>
+
+			<i class="fa-solid fa-clock"> Business Hours</i>
+			<p>mon-fri - 10am - 8pm, sat & sun - Closed </p>
+		</div>
+
+		<div class="cardform">
+			<div class="formstr">
+				<h3>Contact Us</h3>
+			</div>
+			<div class="mb-3 formstr">
+				<label for="name" class="form-label"></label>
+				<input type="text" class="form-control" id="name" placeholder="Enter your name">
+			  </div>
+			  <div class="mb-3 formstr">
+				<label for="mail" class="form-label"></label>
+				<input type="text" class="form-control" id="mail" placeholder="Enter your Mail Address">
+			  </div>
+			  <div class="mb-3 formstr" >
+				<label for="cmnt" class="form-label"></label>
+				<textarea class="form-control" id="cmnt" rows="2"></textarea>
+			  </div>
+			  <div class="mb-3 formstr">
+				<button type="button" class="btn btn-success" onclick="val()">Submit</button>
+			  </div>
+			  
+		</div>
+
+		
+		
+	</div>
+
+	<div class="eight2">
+		<div class="links">
+			<div>Home</div>
+			<div>Design</div>
+			<div>Blog</div>
+			<div>Contact</div>
+			<div>page1</div>
+			<div>page2</div>
+			<div>page3</div>
+			<div>page3</div>
+			<div>page4</div>
+			<div>page5</div>
+		</div>
+		
+		<div class="copy">
+			<p>© Design 2022 All rights reserved</p>
+			<i class="fa-brands fa-instagram"></i>
+			<i class="fa-brands fa-twitter"></i>
+			<i class="fa-brands fa-facebook-f"></i>
+			<i class="fa-brands fa-linkedin"></i>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function val()
+		{
+			var name = document.getElementById('name').value;
+			var ch = "rahul"
+			if (name == ch) {
+				alert("Verified");
+			}
+			else
+			{
+				alert("Invalid");
+			}
+		}
+	</script>
+
+</body>
+
+</html>
